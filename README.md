@@ -1,50 +1,131 @@
-# Welcome to your Expo app 👋
+# Travel Buddy App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A native cross-platform mobile app built with Expo Router + React Native.
 
-## Get started
+## Getting Started
 
-1. Install dependencies
+1. Install dependencies:
 
    ```bash
    npm install
+   # or
+   yarn install
+   # or
+   bun install
    ```
 
-2. Start the app
+2. Start the app:
 
    ```bash
-   npx expo start
+   npm start
+   # or
+   yarn start
+   # or
+   bun start
    ```
 
-In the output, you'll find options to open the app in a
+3. For web development:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   npm run start-web
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Features
 
-## Get a fresh project
+- Cross-platform (iOS, Android, Web)
+- Built with Expo Router
+- Firebase integration
+- Modern React Native components
 
-When you're ready, run:
+## Project Structure
+
+- `app/` - Expo Router app directory
+- `assets/` - Images and static assets
+- `config/` - Configuration files
+- `constants/` - App constants
+- `mocks/` - Mock data
+- `providers/` - React context providers
+- `services/` - API and service integrations
+- `types/` - TypeScript type definitions
+
+## Technologies Used
+
+- **React Native** - Cross-platform native mobile development
+- **Expo** - Platform for universal React apps
+- **Expo Router** - File-based routing system
+- **TypeScript** - Type-safe JavaScript
+- **React Query** - Server state management
+- **Firebase** - Backend services
+- **Lucide React Native** - Beautiful icons
+
+## Testing Your App
+
+### On Your Phone (Recommended)
+
+1. **iOS**: Download [Expo Go](https://apps.apple.com/app/expo-go/id982107779) from the App Store
+2. **Android**: Download [Expo Go](https://play.google.com/store/apps/details?id=host.exp.exponent) from Google Play
+3. Run `npm start` and scan the QR code
+
+### In Your Browser
+
+Run `npm run start-web` to test in a web browser.
+
+### iOS Simulator / Android Emulator
+
+If you have Xcode (iOS) or Android Studio installed:
 
 ```bash
-npm run reset-project
+# iOS Simulator
+npm start -- --ios
+
+# Android Emulator
+npm start -- --android
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Custom Development Builds
 
-## Learn more
+For features requiring native code:
 
-To learn more about developing your project with Expo, look at the following resources:
+- Native authentication
+- In-app purchases
+- Push notifications
+- Custom native modules
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Learn more: [Expo Development Builds](https://docs.expo.dev/develop/development-builds/introduction/)
 
-## Join the community
+- **RevenueCat** - Cross-platform in-app purchases and subscriptions - [Expo Integration Guide](https://www.revenuecat.com/docs/expo)
+- **Expo In-App Purchases** - Direct App Store/Google Play integration - [Implementation Guide](https://docs.expo.dev/versions/latest/sdk/in-app-purchases/)
 
-Join our community of developers creating universal apps.
+**Paywall Optimization:**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **Superwall** - Paywall A/B testing and optimization - [React Native SDK](https://docs.superwall.com/docs/react-native)
+- **Adapty** - Mobile subscription analytics and paywalls - [Expo Integration](https://docs.adapty.io/docs/expo)
+
+## I want to use a custom domain - is that possible?
+
+For web deployments, you can use custom domains with:
+
+- **EAS Hosting** - Custom domains available on paid plans
+- **Netlify** - Free custom domain support
+- **Vercel** - Custom domains with automatic SSL
+
+For mobile apps, you'll configure your app's deep linking scheme in `app.json`.
+
+## Troubleshooting
+
+### **App not loading on device?**
+
+1. Make sure your phone and computer are on the same WiFi network
+2. Try using tunnel mode: `bun start -- --tunnel`
+3. Check if your firewall is blocking the connection
+
+### **Build failing?**
+
+1. Clear your cache: `npx expo start --clear`
+2. Delete `node_modules` and reinstall: `rm -rf node_modules && npm install`
+3. Check [Expo's troubleshooting guide](https://docs.expo.dev/troubleshooting/build-errors/)
+
+### **Need help with native features?**
+
+- Check [Expo's documentation](https://docs.expo.dev/) for native APIs
+- Browse [React Native's documentation](https://reactnative.dev/docs/getting-started) for core components

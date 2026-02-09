@@ -1,0 +1,26 @@
+const Colors = {
+  primary: '#1A9B8E',
+  primaryLight: '#E8F5F3',
+  primaryDark: '#148578',
+  background: '#F8F9FA',
+  white: '#FFFFFF',
+  black: '#1A1A1A',
+  text: '#1A1A1A',
+  textSecondary: '#6B7280',
+  textLight: '#9CA3AF',
+  border: '#E5E7EB',
+  borderLight: '#F3F4F6',
+  card: '#FFFFFF',
+  danger: '#EF4444',
+  dangerLight: '#FEE2E2',
+  warning: '#F59E0B',
+  warningText: '#D97706',
+  success: '#10B981',
+  successLight: '#D1FAE5',
+  star: '#F59E0B',
+  overlay: 'rgba(0,0,0,0.5)',
+  shadow: 'rgba(0,0,0,0.08)',
+  tabInactive: '#9CA3AF',
+};
+
+export default Colors;
